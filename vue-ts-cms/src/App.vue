@@ -1,0 +1,19 @@
+<template>
+  <div id="app">
+    <el-config-provider :locale="zhCn">
+      <router-view></router-view>
+    </el-config-provider>
+  </div>
+</template>
+
+<script setup lang="ts">
+import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
+</script>
+
+<style scoped>
+#app {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(242, 242, 242);
+}
+</style>
